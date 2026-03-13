@@ -1,0 +1,8 @@
+distances.json filter=lfs diff=lfs merge=lfs -text
+lhl_orientations.json filter=lfs diff=lfs merge=lfs -text
+scn_latency.json filter=lfs diff=lfs merge=lfs -text
+scn_orientations.json filter=lfs diff=lfs merge=lfs -text
+unique_ips.txt filter=lfs diff=lfs merge=lfs -text
+geolocation_results.jsonl filter=lfs diff=lfs merge=lfs -text
+hostname_results.jsonl filter=lfs diff=lfs merge=lfs -text
+lhls.jsonl filter=lfs diff=lfs merge=lfs -text

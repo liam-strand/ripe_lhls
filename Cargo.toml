@@ -1,0 +1,34 @@
+[package]
+name = "ripe_lhls"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ahash = "0.8.12"
+bzip2 = "0.6.1"
+clap = { version = "4.5.60", features = ["derive"] }
+crossbeam-channel = "0.5.15"
+dns-lookup = "3.0.1"
+geo = { version = "0.32.0", features = ["serde"] }
+geojson = "0.24.2"
+indicatif = { version = "0.18.4", features = ["improved_unicode", "rayon"] }
+itertools = "0.14.0"
+maxminddb = { version = "0.27.3", features = ["simdutf8", "mmap"] }
+medians = "3.0.12"
+nationify = { git = "https://github.com/liam-strand/nationify.git" }
+petgraph = "0.8.3"
+plotters = "0.3.7"
+rayon = "1.11.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+statrs = "0.18.0"
+ureq = { version = "2.9", features = ["json"] }
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+debug = true
+
+[dev-dependencies]
+# pyo3 = { version = "0.21.2", features = ["auto-initialize"] }
